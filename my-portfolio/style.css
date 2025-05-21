@@ -1,0 +1,108 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body {
+	background-color:#f4decb;
+	
+}
+.heading {
+	display:flex;
+	justify-content:space-between;
+	background-color:#49274a;																												;
+	padding:22px 40px;
+	
+}
+
+.name {
+	color:#f8eee7;
+}
+.menu {
+	display:flex;
+	gap:22px;
+	align-items:center;
+	
+}
+a {
+	text-decoration:none;
+	color:white;
+	font-weight:bold;
+	font-size:22px;
+	
+	
+}
+
+.hamburger-menu{
+	color:white;
+	font-size:30px;
+}
+.section-about {
+	display:flex;
+	justify-content:center;
+	height:80vh;
+	align-items:center;
+	
+}
+.about {
+	display:flex;
+	max-width:800px;
+	background-color:white;
+	align-items:center;
+	height:280px;
+	padding:100px 20px;
+	gap:30px;
+	box-shadow:2px 2px 8px black;
+}
+
+img {
+	width:180px;
+	border:10px solid white;
+	box-shadow:2px 2px 5px black;
+	transform:rotate(3deg);
+}
+
+span {
+	color:skyblue;
+	
+}
+.span {
+	font-size:25px;;
+	
+}
+.para {
+	font-size:17px;
+}
+.intro {
+	font-size:30px;
+	font-weight:bold;
+	margin-bottom:10px;
+	
+}
+.quote {
+	margin-top:30px;
+	border-left:2px solid blue;
+	padding-left:7px;
+	opacity:0.8;
+}
+button {
+	margin-top:20px;
+	background-color:blue;
+	color:white;
+	padding:5px;
+	border-radius:10px;
+}
+
+@media screen and (max-width:768px){
+
+	 .menu a {
+		display:none;
+		
+	}
+}
+@media screen and (min-width:768px){
+.hamburger-menu {
+	display:none;
+	
+}
+}
