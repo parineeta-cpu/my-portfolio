@@ -5,7 +5,7 @@
 }
 body {
 	background-color:#94618e;
-	
+	width:100vw;
 }
 h1 {
 	font-size:40px;
@@ -15,7 +15,6 @@ h1 {
 	justify-content:space-between;
 	background-color:#49274a;																												;
 	padding:22px 40px;
-	
 }
 
 .name {
@@ -42,10 +41,11 @@ h1 {
 }
 .section-about {
 	display:flex;
+	flex-wrap:wrap;
 	justify-content:center;
 	height:80vh;
 	align-items:center;
-	
+	width:100vw;
 }
 .about {
 	display:flex;
