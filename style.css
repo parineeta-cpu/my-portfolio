@@ -5,6 +5,9 @@
 }
 body {
 	background-color:#94618e;
+	
+}
+.main-container {
 	width:100vw;
 }
 h1 {
@@ -121,7 +124,9 @@ h1 {
 	border:none;
 	margin-left:85px;
 	margin-top:10px;
+	width:100px;
 }
+
 .projects div h3 {
 	color:#49274a;
 text-align:center;
@@ -285,6 +290,7 @@ ul li {
 	max-width:250px;
 }
 
+
 .about-me p, .follow-me ul, .links ul {
 	border-top:1px solid white;
 	padding:15px 0px;
@@ -311,6 +317,9 @@ hr {
 	margin-top:-250px;
 	box-shadow:0px 0px;
 }
+.project-button {
+	text-align:center;
+}
 .span-1 {
 	color:#49274a;
 }
@@ -318,7 +327,7 @@ hr {
 		display:none;
 	}
 	input {
-		max-width:200px;
+		max-width:60%;
 	}
 	.image {
 		text-align:center;
