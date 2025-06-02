@@ -12,14 +12,21 @@
 
 <h1 class="name"><i>Parineeta Choudhary</i></h1>
 
-<nav class="menu">
+<nav id="navMenu" class="show">
 <a href="#">Home</a>
 <a href="#">About</a>
 <a href="#">Skills</a>
 <a href="#">Projects</a>
 <a href="#">Contact</a>
 </nav>
-<div class="hamburger-menu">
+<nav id="menu" class="view pages">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Skills</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
+<div class="menu-icon" onclick="toggleMenu()">
 &#9776
 </div>
 </header>
@@ -150,12 +157,18 @@ About Me
 </div>
 <hr></hr>
 <div>
-<p class="rights">@2025 Parineeta.All rights reserved. <a href="https://srgeducation.in/">[SRGeducation]<p>
+<p class="rights">@2025 Parineeta.All rights reserved. <a href="https://srgeducation.in/">[SRGeducation]</a><p>
 </div>
 </footer>
 
 </section>
 </div>
+<script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("view");
+			console.log("clicked");
+        }
+ </script>
 </body>
 
 </html>

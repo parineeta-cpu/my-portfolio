@@ -12,7 +12,7 @@ body {
 }
 h1 {
 	font-size:40px;
-	color:#f4decb;
+	scolor:#f4decb;
 }
 .heading {
 	display:flex;
@@ -25,22 +25,29 @@ h1 {
 .name {
 	color:#f8eee7;
 }
-.menu {
+.show {
 	display:flex;
 	gap:22px;
 	align-items:center;
 	
 }
-.menu a {
+.show a {
 	text-decoration:none;
 	color:white;
 	font-weight:bold;
 	font-size:22px;
 	
-	
+}
+.pages a {
+	text-decoration:none;
+	color:white;
+	font-weight:bold;
+	font-size:15px;
+	display:flex;
+	flex-direction:column;
 }
 
-.hamburger-menu{
+.menu-icon{
 	color:white;
 	font-size:30px;
 }
@@ -324,8 +331,9 @@ hr {
 .span-1 {
 	color:#49274a;
 }
-	 .menu a {
+	 .show {
 		display:none;
+		
 	}
 	input {
 		max-width:60%;
@@ -340,10 +348,19 @@ hr {
 	  .project-info {
 		  margin-top:300px;
 	  }
+	  .view {
+		  display:none;
+			
+	  }
+	
+	  
 }
 @media screen and (min-width:768px){
-.hamburger-menu {
+.menu-icon {
 	display:none;
 	
+}
+.view {
+	display:none;
 }
 }
