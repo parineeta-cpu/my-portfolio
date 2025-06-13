@@ -41,6 +41,10 @@ h1 {
 	font-size:22px;
 	
 }
+.show a:hover {
+	text-decoration:underline;
+	color:blue;
+}
 .pages a {
 	text-decoration:none;
 	color:white;
@@ -79,6 +83,33 @@ h1 {
 	gap:30px;
 	box-shadow:5px 5px 10px black;
 	border-radius:7px;
+	animation-name:example;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+
+}
+@keyframes example {
+	0% {
+		width:0%;
+		opacity:0;
+		
+	}
+	20% {
+		width:20%;
+		opacity:0.2;
+	}
+	50% {
+		width:50%;
+		opacity:0.5;
+	}
+	80% {
+		width:80%;
+		opacity:0.8;
+	}
+	100% {
+		width:100%;
+		opacity:1;
+	}
 }
 
 .self-img {
@@ -122,11 +153,18 @@ h1 {
 	font-weight:700;
 	border:none;
 }
+.resume:hover,.send:hover {
+	box-shadow:0px 0px 10px 2px black;
+}
+.project-button:hover{
+	box-shadow:0px 0px 15px 2px;
+}
 .project-info {
 	
 	background-color:#f4decb;
 	
 }
+
 
 .project-button {
 	background-color:#49274a;
@@ -172,6 +210,10 @@ padding:15px 20px;
 border-radius:20px;
 box-shadow:2px 2px 5px black;
 }
+.project-item:hover {
+	background-color:rgb(202, 26, 129);
+	color:white;
+}
 .project-item h3 {
 	font-size:20px;
 }
@@ -201,6 +243,8 @@ box-shadow:2px 2px 5px black;
 }
 .skills div:hover {
 	transform:scale(1.05);
+	background-color:rgb(202, 26, 129);
+	color:white;
 }
 .skills div h3 {
 	text-align:center;
@@ -232,7 +276,7 @@ box-shadow:2px 2px 5px black;
 } 
 input {
 	width:600px;
-	height:25px;
+	height:35px;
 	margin:10px 0px;
 	padding:10px;
 	
@@ -257,6 +301,11 @@ input {
 	text-decoration:none;
 	color:white;
 	
+}
+
+.links a:hover, .follow-me a:hover{
+	text-decoration:underline;
+	color:blue;
 }
 footer {
 	color:white;
@@ -321,6 +370,7 @@ hr {
 	text-decoration:none;
 	color:white;
 }
+
 
 
 
