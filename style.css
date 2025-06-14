@@ -9,6 +9,7 @@ body {
 }
 .main-container {
 	width:100vw;
+	
 }
 h1 {
 	font-size:42px;
@@ -56,10 +57,13 @@ h1 {
 	flex-direction:column;
 	padding:10px 15px;
 }
-
+.heading{
+	display:flex;
+	gap:25px;
+}
 .menu-icon{
 	color:white;
-	font-size:25px;
+	font-size:28px;
 }
 .section-about {
 	display:flex;
@@ -243,7 +247,7 @@ box-shadow:2px 2px 5px black;
 	border-radius:5px;
 } 
 input {
-	width:600px;
+	width:500px;
 	height:35px;
 	margin:10px 0px;
 	padding:10px;
@@ -254,9 +258,11 @@ input {
 	padding-top:15px;
 }
 .send {
+	margin-top:10px;
+	width:500px;
 	background-color:#49274a;
 	color:white;
-	padding:8px 12px;
+	padding:10px 12px;
 	border-radius:7px;
 	border:none;
 }
@@ -353,12 +359,9 @@ border-radius:60%;
 		border-radius:0%;
 		width:0%;
 	}
-	50% {
-		border-radius:30%;
-		width:50%;
-	}
+	
 	100%{
-		border-radius:60%;
+		border-radius:50%;
 		width:80%;
 	}
 }
@@ -367,32 +370,32 @@ border-radius:60%;
 
 @media screen and (max-width:768px){
 		.self-img {
-	width:240px;
+width:70vw;
 	border:10px solid white;
 	box-shadow:0px 0px 10px 2px black;
 	transform:rotate(3deg);
 	animation-name:circle;
-	animation-duration:2s;
+	animation-duration:1s;
 border-radius:0%;
+animation-timing-function: ease;
 }
 @keyframes circle {
 	0% {
 		border-radius:100%;
-		width:0%;
+		width:0vw;
 	}
-	50% {
-		border-radius:50%;
-		width:50%;
-	}
+	
 	100%{
 		border-radius:0%;
-		width:90%;
+		width:70vw;
 	}
 }
-
+.section-about{
+	height:100vh;
+}
 .about {
 	flex-wrap:wrap;
-	
+
 	color:white;
 	box-shadow:0px 0px;
 }
@@ -414,8 +417,8 @@ body {
 	position:fixed;
 	height:100vh;
 	right:0%;
-	top:110px;
-	
+	top:122px;
+	background-color: #753677;
 	opacity:0.8;
 	z-index:3;
 	padding:50px;
@@ -424,15 +427,19 @@ body {
 
 
 	input {
-		max-width:60%;
+		max-width:65vw;
+		border:none;
+	}
+	.send{
+		width:65vw;
 	}
 	.image {
-		text-align:center;
-		margin-top:-40px;
+		display:flex;
+		justify-content:center;
+		margin-top:-70px;
 	}
-	  .self-img {
-		  width:90%;
-	  }
+	 
+	
 	  .project-info {
 		  margin-top:300px;
 	  }
@@ -444,6 +451,8 @@ body {
 		font-size:30px;
 	}
 	.heading{
+		display:flex;
+		gap:25px;
 		padding-bottom:27px;
 		padding-top:27px;
 		padding-left:7px;
@@ -485,7 +494,9 @@ animation-fill-mode:forwards
 		transform:translateX(280px);
 	}
 }
-
+.self-img {
+	width:240px;
+}
 
 	.menu-icon {
 	display:none;
