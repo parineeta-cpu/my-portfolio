@@ -113,6 +113,7 @@ h1 {
 	font-size:37px;
 	font-weight:bold;
 	margin-bottom:10px;
+
 	
 	
 }
@@ -380,7 +381,7 @@ width:70vw;
 	animation-name:circle;
 	animation-duration:1.5s;
 border-radius:0%;
-animation-timing-function: ease-in;
+animation-timing-function: ease-in-out;
 }
 @keyframes circle {
 	0% {
@@ -434,10 +435,9 @@ body {
 	height:100vh;
 	right:0%;
 	top:122px;
-	background-color: #753677;
-	opacity:0.8;
+	background-color: #49274a;
 	z-index:3;
-	padding:50px;
+	padding:65px;
 	box-shadow:0px 0px 40px 2px black;
 }
 
@@ -486,13 +486,13 @@ animation-fill-mode:forwards;
 }
 @keyframes example {
 	0% {
-		width:0%;
+		width:0px;
 		opacity:0;
 		transform:translateX(0);
 	}
 
 	100% {
-			width:100%;
+			width:800px;
 		opacity:1;
 		transform:translateX(280px);
 	}
