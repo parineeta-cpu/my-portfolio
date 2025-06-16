@@ -219,7 +219,7 @@ box-shadow:2px 2px 5px black;
 }
 .skills div:hover {
 	transform:scale(1.05);
-	background-color:rgb(202, 26, 129);
+	background-color:#9d4d88;
 	color:white;
 }
 .skills div h3 {
