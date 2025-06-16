@@ -255,6 +255,7 @@ input {
 	height:35px;
 	margin:10px 0px;
 	padding:10px;
+	border:none;
 	
 }
 .message {
