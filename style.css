@@ -5,7 +5,7 @@
 
 }
 body {
-	background-image:linear-gradient(to right,#75286c,#c769bc);
+	
 	
 }
 .main-container {
@@ -74,7 +74,22 @@ h1 {
 	height:85vh;
 	align-items:center;
 	width:100vw;
+	transition:all 1s linear;
+	animation:color 4s infinite ease-in-out;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-image:linear-gradient(to right,#3b0234,#c006aa);
 }
+@keyframes color{
+	0%{
+background-image:linear-gradient(to right,rgb(99, 4, 99),rgb(190, 5, 190))
+	}
+	100%{
+		background-image:linear-gradient(135deg,#3b0234,#c006aa);
+
+	}	
+}
+
 .project-item:hover{
 	transform:scale(1.05);
 }
@@ -142,6 +157,7 @@ h1 {
 	border-left:2px solid purple;
 	padding-left:7px;	
 	opacity:0.8;
+	
 }
 .resume {
 	margin-top:20px;
@@ -257,7 +273,9 @@ box-shadow:2px 2px 5px black;
 .skills div p {
 	text-align:center;
 }
-
+.qualification p{
+	font-size:18px;
+}
 .sub-heading-2 {
 	text-align:center;
 	padding:30px;
@@ -395,6 +413,7 @@ hr {
 }
 
 	.self-img {
+	
 	width:240px;
 	border:10px solid white;
 	box-shadow:0px 0px 10px 2px black;
@@ -405,12 +424,14 @@ border-radius:60%;
 @keyframes circle {
 	0% {
 		border-radius:0px;
-		width:0%;
+		transform:scale(0);
+		opacity:0;
 	}
 	
 	100%{
 		border-radius:50%;
-		width:240px;
+		transform:scale(1.02);
+		opacity:1;
 	}
 }
 
@@ -418,9 +439,10 @@ border-radius:60%;
 
 @media screen and (max-width:768px){
 		.self-img {
-width:70vw;
+width:60vw;
 	border:10px solid white;
 	box-shadow:0px 0px 10px 2px black;
+	transition:all 1.5s ease-in-out;
 	animation-name:circle;
 	animation-duration:1.5s;
 border-radius:0%;
@@ -429,12 +451,14 @@ animation-timing-function: ease-in-out;
 @keyframes circle {
 	0% {
 		border-radius:100%;
-		width:0vw;
+		transform:scale(0);
+		opacity:0;
 	}
 	
 	100%{
 		border-radius:0%;
-		width:70vw;
+		transform:scale(1.02);
+		opacity:1;
 	}
 }
 .intro{
@@ -451,7 +475,7 @@ animation-timing-function: ease-in-out;
 	}
 }
 .section-about{
-	height:100vh;
+	height:900px;
 }
 .about {
 	flex-wrap:wrap;
@@ -491,15 +515,14 @@ animation-timing-function: ease-in-out;
 		width:65vw;	
 	}
 	.image {
+		width:80vw;
 		display:flex;
 		justify-content:center;
-		margin-top:100px;
+		margin-top:-100px;
 	}
 	 
 	
-	  .my{
-		margin-top:100px;
-	  }
+	  
 	  .view {
 		  display:none;
 			
@@ -529,9 +552,7 @@ background-color:#f4decb;
 		transform:translateX(0);
 	}
 }
-.self-img {
-	width:240px;
-}
+
 
 	.menu-icon {
 	display:none;
