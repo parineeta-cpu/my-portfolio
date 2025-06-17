@@ -482,7 +482,7 @@ animation-timing-function: ease-in-out;
 }
 
 
-	input {
+	input,textarea {
 		max-width:65vw;
 		border:none;
 	}
