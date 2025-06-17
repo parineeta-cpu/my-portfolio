@@ -2,6 +2,7 @@
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
+
 }
 body {
 	background-image:linear-gradient(to right,#75286c,#c769bc);
@@ -69,36 +70,56 @@ h1 {
 .section-about {
 	display:flex;
 	flex-direction:row;
-	
+	justify-content:center;
 	height:85vh;
 	align-items:center;
 	width:100vw;
 }
-.my-projects div:hover{
+.project-item:hover{
 	transform:scale(1.05);
+}
+.project-item {
+	transition:transform 0.4s linear 0.1s;
+	
+	
 }
 
 .about {
 	
 	display:flex;
-	flex-direction:row;
 	max-width:800px;
 	
 	align-items:center;
-	height:350px;
-	padding:0px 50px;
+	
+	padding:35px 50px;
 	gap:30px;
 	box-shadow:5px 5px 10px black;
 	border-radius:7px;
 }
 .self-img{
 	transform:rotate(3deg);
+	transition:transform 0.3s linear 0.1s;
 }
 .self-img:hover{
 	transform:scale(1.05);
 
 }
+.main{
+	opacity:0;
+	animation:fadeinup 1.5s ease-in-out forwards;
+	animation-delay:1s;
 
+}
+@keyframes fadeinup{
+	0%{
+		opacity:0;
+		transform:translateY(50px);
+	}
+	100%{
+		opacity:1;
+		transform:translateY(0);
+	}
+}
 
 .span-1 {
 	
@@ -110,17 +131,16 @@ h1 {
 	flex:1;
 }
 .intro {
+	
 	font-size:37px;
 	font-weight:bold;
-	margin-bottom:10px;
-
-	
-	
+	margin-bottom:10px;	
 }
+
 .quote {
 	margin-top:30px;
 	border-left:2px solid purple;
-	padding-left:7px;
+	padding-left:7px;	
 	opacity:0.8;
 }
 .resume {
@@ -134,7 +154,7 @@ h1 {
 }
 
 button:hover {
-	box-shadow:0px 0px 10px 2px black;
+	box-shadow:1px 1px 15px 2px rgba(0, 0, 0, 0.637);
 }
 
 
@@ -151,9 +171,10 @@ button:hover {
 	width:100px;
 }
 
+
 .project-info{
 	background-image:linear-gradient(to right,#f4decb,#fcf3ec);
-padding-bottom:50px;
+
 padding-top:20px;
 }
 .projects div h3 {
@@ -168,7 +189,7 @@ text-align:center;
 	background-image:linear-gradient(to right,#f4decb,#fcf3ec);
 
 	text-align:center;
-	padding-top:20px;
+	padding:20px 0px;
 	font-size:25px;
 	font-weight:bold;
 }
@@ -181,6 +202,10 @@ text-align:center;
 	padding:100px 0px;
 	padding-top:30px;
 					
+}
+.weather-app h3 {
+	width:250px;
+	
 }
 .project-item {
 	width:300px;
@@ -208,12 +233,14 @@ box-shadow:2px 2px 5px black;
 	flex-wrap:wrap;
 	justify-content:center;
 	gap:25px;
+	padding-bottom: 105px;
 	
 }
 .skills div {
 	width:300px;
 		background-color:#f4decb;
 padding:15px 20px;
+transition:all 0.8s linear 0.1s;
 border-radius:20px;
 box-shadow:2px 2px 5px black;
 }
@@ -230,21 +257,29 @@ box-shadow:2px 2px 5px black;
 .skills div p {
 	text-align:center;
 }
+
 .sub-heading-2 {
 	text-align:center;
 	padding:30px;
 	font-size:25px;
 	margin-bottom:15px;
 }
+.data{
+text-align:center;
+}
 .get-in-touch {
-	padding-top:80px;
+	display:flex;
+	flex-direction:column;
+	gap:20px;
+	padding-top:50px;
+	padding-bottom:100px;
 	background-color:#f8eee7;
-	text-align:center;
-	padding-bottom:50px;
+	text-align:center:
+	
 }
 .get-in-touch h3 {
-	margin:15px 0px;
-	font-size:23px;
+	margin-bottom:25px;
+	font-size:25px;
 				
 }
 .get-in-touch input {
@@ -253,23 +288,31 @@ box-shadow:2px 2px 5px black;
 input {
 	width:500px;
 	height:35px;
-	margin:10px 0px;
+	
 	padding:10px;
 	border:none;
 	
 }
-.message {
+textarea {
 	padding-bottom:100px;
 	padding-top:15px;
+	width:500px;
+	border:none;
+	padding:10px;
+	height:130px;
 }
 .send {
-	margin-top:10px;
 	width:500px;
 	background-color:#49274a;
 	color:white;
 	padding:10px 12px;
 	border-radius:7px;
 	border:none;
+	
+}
+.but {
+	display:flex;
+	justify-content:center;
 }
 .links ul li {
 	display:flex;
@@ -355,19 +398,18 @@ hr {
 	border:10px solid white;
 	box-shadow:0px 0px 10px 2px black;
 	transform:rotate(3deg);
-	animation-name:circle;
-	animation-duration:2s;
+	animation:circle 2s ease-in-out ;
 border-radius:60%;
 }
 @keyframes circle {
 	0% {
-		border-radius:0%;
+		border-radius:0px;
 		width:0%;
 	}
 	
 	100%{
 		border-radius:50%;
-		width:80%;
+		width:240px;
 	}
 }
 
@@ -378,7 +420,6 @@ border-radius:60%;
 width:70vw;
 	border:10px solid white;
 	box-shadow:0px 0px 10px 2px black;
-	
 	animation-name:circle;
 	animation-duration:1.5s;
 border-radius:0%;
@@ -417,9 +458,7 @@ animation-timing-function: ease-in-out;
 	color:white;
 	box-shadow:0px 0px;
 }
-body {
-	background-color:#450e46;
-}
+
 .project-button {
 	margin-left:80px;
 	margin-top:10px;
@@ -453,12 +492,12 @@ body {
 	.image {
 		display:flex;
 		justify-content:center;
-		margin-top:-100px;
+		margin-top:100px;
 	}
 	 
 	
-	  .project-info {
-		  margin-top:300px;
+	  .my{
+		margin-top:100px;
 	  }
 	  .view {
 		  display:none;
@@ -477,25 +516,16 @@ body {
 	 
 }
 @media screen and (min-width:768px){
-
-.about {
-	background-color:#f4decb;
-	animation-name:example;
-	animation-duration:2s;
-	animation-timing-function: ease;
-animation-fill-mode:forwards;
+.about{
+	opacity:0;
+	transform:translateX(50px);
+	animation:slidefadein 1s ease-in-out 0.5s forwards;
+background-color:#f4decb;
 }
-@keyframes example {
-	0% {
-		width:0px;
-		opacity:0;
-		transform:translateX(0);
-	}
-
-	100% {
-			width:800px;
+@keyframes slidefadein {
+	to {
 		opacity:1;
-		transform:translateX(280px);
+		transform:translateX(0);
 	}
 }
 .self-img {
