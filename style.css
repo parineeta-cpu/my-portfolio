@@ -26,7 +26,7 @@ h1 {
 	position:sticky;
 	top:0%;
 	z-index:2;
-	box-shadow:0px 0px 40px 5px white;
+	box-shadow:0px 0px 30px 5px white;
 }
 
 .name {
@@ -75,14 +75,23 @@ h1 {
 	align-items:center;
 	width:100vw;
 	transition:all 1s linear;
-	animation:color 4s infinite ease-in-out;
+	animation:color 7s infinite ease-in-out;
 	background-size:100%;
 	background-repeat:no-repeat;
 	background-image:linear-gradient(to right,#3b0234,#c006aa);
 }
 @keyframes color{
 	0%{
-background-image:linear-gradient(to right,rgb(99, 4, 99),rgb(190, 5, 190))
+background-image:linear-gradient(to right,rgb(99, 4, 99),rgb(145, 4, 145))
+	}
+	20%{
+	background-image:linear-gradient(to right,rgb(104, 4, 104),rgb(180, 3, 180))	
+	}
+	50%{
+		background-image:linear-gradient(to right,rgb(102, 2, 102),rgb(177, 3, 177))
+	}
+	70%{
+		background-image:linear-gradient(135deg,rgb(82, 3, 82),rgb(177, 4, 177))
 	}
 	100%{
 		background-image:linear-gradient(135deg,#3b0234,#c006aa);
@@ -508,7 +517,7 @@ animation-timing-function: ease-in-out;
 
 
 	input,textarea {
-		max-width:65vw;
+		max-width:70vw;
 		border:none;
 	}
 	.send{
