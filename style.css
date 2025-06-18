@@ -265,7 +265,7 @@ box-shadow:2px 2px 5px black;
 	width:300px;
 		background-color:#f4decb;
 padding:15px 20px;
-transition:all 0.8s linear 0.1s;
+transition:all 0.6s linear 0.1s;
 border-radius:20px;
 box-shadow:2px 2px 5px black;
 }
@@ -459,7 +459,7 @@ animation-timing-function: ease-in-out;
 }
 @keyframes circle {
 	0% {
-		border-radius:100%;
+		border-radius:50%;
 		transform:scale(0);
 		opacity:0;
 	}
