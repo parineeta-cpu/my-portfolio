@@ -29,7 +29,7 @@ function added(){
 
     function cut(){
         para2.style.textDecoration="line-through";
-        para2.style.opacity="0.8";
+        para2.style.opacity="0.7";
     }
     but.addEventListener("click",remove);
      para.appendChild(but); 
