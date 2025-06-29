@@ -33,6 +33,7 @@ function added(){
     }
     but.addEventListener("click",remove);
      para.appendChild(but); 
+     para.classList.add('para');
      but.classList.add('cancelbut');  
      para2.addEventListener("click",cut);  
 }   
