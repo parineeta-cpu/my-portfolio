@@ -63,6 +63,9 @@ p{
     margin-left:50px;
 }
 @media(max-width:480px){
+    .heading{
+        font-size:25px;
+    }
     button{
         margin:0px 40px;
     }
