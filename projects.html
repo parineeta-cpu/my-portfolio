@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+    <header class="heading">
+<h1 class="name"><i>Parineeta Choudhary</i></h1>
+
+    
+<nav id="navMenu" class="show">
+<a href="../index.html">Home</a>
+<a href="../about/about.html">About</a>
+<a href="../skills/skills.html">Skills</a>
+<a href="../projects/projects.html">Projects</a>
+<a href="..contact/contact.html">Contact</a>
+</nav>
+
+<div class="menu-icon" onclick="toggleMenu()">
+&#9776
+</div>
+</header>
+<div class="menu-div view" id="menu">
+<nav class="pages">
+<a href="./index.html">Home</a>
+<a href="./about/about.html">About</a>
+<a href="./skills/skills.html">Skills</a>
+<a href="./projects/projects.html">Projects</a>
+<a href=".contact/contact.html">Contact</a>
+</nav>
+</div>
+    <div class="my-projects">
+   <div class="projects">
+<div class="project-item portfolio">
+<h3>Portfolio website</h3>
+<p>A modern responsive portfolio to showcase my work and skills using HTML,CSS and Javascript. </p>
+<a class="project-button" href="https://parineeta.netlify.app/">View Project</a>
+</div>
+<div class="project-item portfolio">
+<h3>E-commerce Website</h3>
+<p>A sleek e-commerce website clone built with HTML, CSS, featuring modern UI, product listings. </p>
+<a class="project-button" href="https://m-clonebyparineeta.netlify.app/">View Project</a>
+</div>
+<div class="project-item to-do-list">
+<h3>Calculator</h3>
+<p>A simple yet powerful Calculator using HTML,CSS and JS. Handles basic arithmetic operations.
+</p>
+<a class="project-button" href="https://pari-calculator.netlify.app">View Project</a>
+</div>
+<div class="project-item to-do-list">
+<h3>To-Do List App</h3>
+<p>A simple to-do list application buit with vanilla Javascript and localStorage support.</p>
+<a class="project-button" href="./Todo-list/todo.html">View Project</a>
+</div> 
+<div class="project-item to-do-list">
+<h3>Counter Application</h3>
+<p>A JavaScript base Counter app with smooth increment,decrement and reset funtionality.</p>
+<a class="project-button" href="./counter-app/counter.html">View Project</a>
+</div> 
+
+</div>
+<script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("view");
+			console.log("clicked");
+        }
+ </script>
+ </div>
+</body>
+</html>
