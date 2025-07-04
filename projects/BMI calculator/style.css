@@ -3,9 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-body{
-    background-color: black;
-}
+
 .main-section{
     width:100vw;
     height:100vh;
@@ -23,7 +21,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 border-radius: 10px;
-box-shadow:2px 2px 8px;
+box-shadow:4px 4px 8px black;
     gap:30px;
     background-color: #2e0057;
     color:white;
@@ -72,7 +70,8 @@ margin:0px 200px;
 }
 @media(max-width:480px){
     .heading{
-        font-size:25px;
+        font-size:23px;
+        margin:0px 5px;
     }
     button{
         margin:0px 40px;
