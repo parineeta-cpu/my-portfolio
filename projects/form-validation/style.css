@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align:center;
+    font-size:26px;
+}
+section{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.submission-form{
+   display:flex;
+   flex-direction:column;
+    justify-content:center;
+   width:95%;
+   gap:10px;
+   max-width:350px;
+   border-radius:10px;
+   padding:20px 10px;
+background-image:linear-gradient(#df4375,#fbd84f); 
+box-shadow:0px 0px 7px 2px #df4375;
+
+}
+h3{
+    margin:0px 20px;
+
+}
+
+input{
+    font-size:16px;
+   margin:0px 20px;
+    padding:7px 10px;
+    border:none;
+ border-radius:2px;
+}
+.checkbox{
+    margin-right:5px;
+   
+}
+.terms{
+    font-size:17px;
+}
+.gender{
+    padding:6px 10px;
+    margin:0px 20px;
+    font-size:15px;
+}
+button{
+    padding:7px 10px;
+    color:white;
+    background-color:#342d50;
+    font-size:16px;
+    font-weight:bold;
+    border:none;
+    border-radius:20px;
+    margin:0px 20px;
+}
