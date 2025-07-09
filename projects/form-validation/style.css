@@ -17,7 +17,7 @@ section{
    display:flex;
    flex-direction:column;
     justify-content:center;
-   width:95%;
+   width:80%;
    gap:10px;
    max-width:350px;
    border-radius:10px;
@@ -59,4 +59,10 @@ button{
     border:none;
     border-radius:20px;
     margin:0px 20px;
+}
+@media(max-width:480px){
+    section{
+        display:flex;
+        align-items: center;
+    }
 }
