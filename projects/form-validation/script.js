@@ -1,4 +1,5 @@
 const submitBtn=document.querySelector("#submitbtn");
+
 function form(){
    const nameInput= document.querySelector("#name");
    const emailInput=document.querySelector("#email");
@@ -15,6 +16,7 @@ function form(){
     alert("Please enter a valid email");
      return;
    }
+  
    if(passwordInput.value.length<6){
     alert("Password must be atleast 6 characters long.")
      return;
