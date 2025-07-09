@@ -1,6 +1,7 @@
 const submitBtn=document.querySelector("#submitbtn");
 
 function form(){
+  event.preventDefault();
    const nameInput= document.querySelector("#name");
    const emailInput=document.querySelector("#email");
    const passwordInput=document.querySelector("#password");
@@ -30,7 +31,7 @@ alert("Passwords do not match");
     alert("Please enter a valid 10-digit number.")
      return;
    }
-   if(gender.value===""){
+   if(genderInput.value===""){
     alert("Please select your gender");
      return;
    }
