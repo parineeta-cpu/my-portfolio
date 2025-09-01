@@ -7,7 +7,7 @@ document.querySelector("#input").value="";
 const infoDiv= document.querySelector(".info-div");
 const info = document.querySelectorAll(".info");
 const url = `https://api.weatherapi.com/v1/current.json?key=${keyCode}&q=${input}`;
-if(input===""){
+if(!input.trim(){
         alert("Please enter something..")
     }
     info.forEach((div) => {
@@ -94,4 +94,5 @@ info[10].appendChild(cloud2);
 
 }
 submitBtn.addEventListener("click",weather);
+
 
