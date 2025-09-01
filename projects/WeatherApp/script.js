@@ -1,5 +1,6 @@
 const submitBtn = document.querySelector("#btn");
 function weather(){
+
     let keyCode = "707f60f7992d4bb9a9b93900253008";
 let input = document.querySelector("#input").value;
 document.querySelector("#input").value="";
@@ -17,8 +18,8 @@ fetch(url)
 .then((res)=>{
     return res.json();
 }).then((data)=>{
-    if(data.error){
-        alert(data.error.message);
+    if (!data || !data.location) {
+        throw new Error("Invalid location");
     }
 infoDiv.style.display='flex';
 infoDiv.style.flexDirection='column';
@@ -37,7 +38,7 @@ temp2.innerText = data.current.temp_c+"ºc";
 const wind = document.createElement('p');
 const wind2 = document.createElement('p');
 wind.innerText = "🌬 Wind:";
-wind2.innerText = data.current.wind_mph+"m/h";
+wind2.innerText = data.current.wind_kph+"km/h";
 const windDir = document.createElement('p');
 const windDir2 = document.createElement('p');
 windDir.innerText="🧭 Wind direction:"
@@ -85,9 +86,12 @@ info[8].appendChild(vis);
 info[8].appendChild(vis2);
 info[9].appendChild(rain);
 info[9].appendChild(rain2);
+info[10].appendChild(cloud);
+info[10].appendChild(cloud2);
 }).catch((error)=>{
-    console.log("error");
+    alert("Data not found");
 })
+
 }
 submitBtn.addEventListener("click",weather);
 
