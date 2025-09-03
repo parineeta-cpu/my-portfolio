@@ -2,6 +2,7 @@ const main = document.querySelector('#main');
 const info = document.querySelectorAll('.info');
 const generateBtn = document.querySelector('#generateBtn');
 const image=document.querySelector("#image");
+const para=document.querySelector(".request");
 function generate(){
 const dateSelector = document.querySelector('#dateSelector').value;
 const apiKey="b8OWmaTHWutzcBntD71u84F1IEIb1zdq5VChCQbK";
@@ -14,7 +15,7 @@ info[0].innerHTML = `<h2> Title:${data.title}</h2>`
 info[1].innerText = `Date:${data.date}`
 info[2].innerText = `Description:${data.explanation}`
 image.src=data.url;
-
+para.style.display="none";
 }).catch((error)=>{
 alert("Something Went Wrong");
 })
