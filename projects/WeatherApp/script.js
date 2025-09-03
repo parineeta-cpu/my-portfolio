@@ -1,20 +1,19 @@
 const submitBtn = document.querySelector("#btn");
 function weather(){
-
+event.preventDefault();
     let keyCode = "707f60f7992d4bb9a9b93900253008";
 let input = document.querySelector("#input").value;
 document.querySelector("#input").value="";
 const infoDiv= document.querySelector(".info-div");
 const info = document.querySelectorAll(".info");
 const url = `https://api.weatherapi.com/v1/current.json?key=${keyCode}&q=${input}`;
-if(!input.trim()){
-        alert("Please enter something..");
-        return;
-    }
+
     info.forEach((div) => {
   div.innerHTML = "";
 });
-
+if(!input.trim()){
+        alert("Please enter something..")
+    }
 fetch(url)
 .then((res)=>{
     return res.json();
@@ -22,6 +21,7 @@ fetch(url)
     if (!data || !data.location) {
         throw new Error("Invalid location");
     }
+    
 infoDiv.style.display='flex';
 infoDiv.style.flexDirection='column';
 infoDiv.style.gap='10px';
@@ -92,6 +92,7 @@ info[10].appendChild(cloud2);
 }).catch((error)=>{
     alert("Data not found");
 })
-
+    
 }
 submitBtn.addEventListener("click",weather);
+
