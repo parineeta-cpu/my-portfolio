@@ -1,5 +1,5 @@
 *{
-    margin:0;
+	margin:0;
 padding:0;
 box-sizing: border-box;
 }
@@ -8,11 +8,9 @@ h1 {
 	color:#f4decb;
 	margin-left:10px;
 }
-.main-container {
-	width:100vw;
-	
-}
+
 .heading {
+
 	display:flex;
 	justify-content:space-between;
 	background-color:#49274a;																												;
@@ -78,14 +76,12 @@ font-size:23px;
 	justify-content:center;
     background-image:linear-gradient(to right,#f4decb,#fcf3ec);
 
-padding:20px 7px;
 }
 .projects {
-    width:100vw;
+    width:100%;
 	display:flex;
 	gap:40px;
-	justify-content:center;
-	flex-wrap:wrap;
+	flex-direction:column;
 	padding:100px 0px;
 	padding-top:30px;			
 }
@@ -95,9 +91,9 @@ padding:20px 7px;
    justify-content: center;
    gap:17px;
     width:90%;
-	max-width:300px;
+	margin:0 auto;
 background-color:white;
-padding:15px 20px;
+padding:20px 20px;
 border-radius:20px;
 box-shadow:2px 2px 5px black;
 }
@@ -110,9 +106,14 @@ box-shadow:2px 2px 5px black;
 	border-radius:7px;
 	border:none;
     text-align: center;
-    margin:0px 60px;
+   
 }
-
+.btnSection{
+	display: flex;
+	justify-content: center;
+	gap:20px;
+	flex-wrap:wrap;
+}
 .project-item p {
 	
 	text-align:center;
