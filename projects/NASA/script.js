@@ -12,10 +12,11 @@ const link = fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=$
 link.then((res)=>{
 return res.json();
 }).then((data)=>{
+    image.src=data.url;
 info[0].innerHTML = `<h2>Title:${data.title}</h2>`
 info[1].innerText = `Date:${data.date}`
 info[2].innerText = `Description:${data.explanation}`
-image.src=data.url;
+
 }).catch((error)=>{
 alert("Something Went Wrong");
 })
@@ -23,3 +24,4 @@ console.log(dateSelector);
 }
 generate();
 generateBtn.addEventListener("click",generate);
+
